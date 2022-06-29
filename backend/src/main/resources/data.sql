@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Tire as suas dúvidas', 2, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives para a turma', 3, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, tb_resource, tb_prerequisite) VALUES ('Capítulo 1', 'Neste capítulo vamos começar', 1, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, tb_resource, tb_prerequisite) VALUES ('Capítulo 2', 'Neste capítulo vamos continuar', 2, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, tb_resource, tb_prerequisite) VALUES ('Capítulo 3', 'Neste capítulo vamos finalizar', 3, 'https://c.pxhere.com/images/cb/4f/09ab0eff60dade28fd17768aeb16-1570023.jpg!d', 1, 2);
