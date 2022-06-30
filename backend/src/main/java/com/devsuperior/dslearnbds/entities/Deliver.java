@@ -38,7 +38,7 @@ public class Deliver implements Serializable {
 		@JoinColumn(name = "offer_id"),
 		@JoinColumn(name = "user_id")
 	})
-	private Enrollment enrolment;
+	private Enrollment enrollment;
 	
 	@ManyToOne
 	@JoinColumn(name = "lesson_id")
@@ -56,7 +56,7 @@ public class Deliver implements Serializable {
 		this.status = status;
 		this.feedback = feedback;
 		this.correctCount = correctCount;
-		this.enrolment = enrolment;
+		this.enrollment = enrolment;
 		this.lesson = lesson;
 	}
 
@@ -109,11 +109,11 @@ public class Deliver implements Serializable {
 	}
 
 	public Enrollment getEnrolment() {
-		return enrolment;
+		return enrollment;
 	}
 
 	public void setEnrolment(Enrollment enrolment) {
-		this.enrolment = enrolment;
+		this.enrollment = enrolment;
 	}
 
 	public Lesson getLesson() {
