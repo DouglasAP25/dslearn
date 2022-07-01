@@ -13,7 +13,7 @@ public class NotificationDTO implements Serializable {
 	private Instant moment;
 	private boolean read;
 	private String route;
-	private Long user_id;
+	private Long userId;
 	
 	public NotificationDTO(Notification entity) {
 		id = entity.getId();
@@ -21,16 +21,16 @@ public class NotificationDTO implements Serializable {
 		moment = entity.getMoment();
 		read = entity.isRead();
 		route = entity.getRoute();
-		user_id = entity.getUser().getId();
+		userId = entity.getUser().getId();
 	}
 
-	public NotificationDTO(Long id, String text, Instant moment, boolean read, String route, Long user_id) {
+	public NotificationDTO(Long id, String text, Instant moment, boolean read, String route, Long userId) {
 		this.id = id;
 		this.text = text;
 		this.moment = moment;
 		this.read = read;
 		this.route = route;
-		this.user_id = user_id;
+		this.userId = userId;
 	}
 
 	public Long getId() {
@@ -73,11 +73,11 @@ public class NotificationDTO implements Serializable {
 		this.route = route;
 	}
 
-	public Long getUser_id() {
-		return user_id;
+	public Long getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(Long user_id) {
-		this.user_id = user_id;
+	public void setUserId(Long userId) {
+		this.userId = userId;
 	}
 }
